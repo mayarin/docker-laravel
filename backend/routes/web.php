@@ -14,5 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    // echo 'test';
     return view('welcome');
 });
+
+Route::get('hello_dummy', function () {
+    // echo 'hello world';
+    return view('hello_world');
+});
+
+Route::get('home', 'HomeController@index');
